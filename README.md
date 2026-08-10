@@ -1,2 +1,2 @@
 # Odin-Project-Foundations-Assignments
-Monorepo containing the assignments for each lesson. Separate, dedicated projects are instead found in their own repository elsewhere
+Monorepo containing the assignments for each lesson. Each folder corresponds to a lesson within the Foundations Course of the same name. The Projects that accompany each chapter are found in the Projects subdirectory. 
