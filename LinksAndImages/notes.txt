@@ -1,0 +1,73 @@
+Lesson Overview: 
+How to create links to pages on other websites
+How to create links to other pages on my own websites
+Absolute VS Relative links
+How to display an image using HTML
+
+Anchor Elements:
+    Anchor element is defined by wrapping the text or another
+    HTML element we want to be a link with an <a> tag. 
+    Need to add the href attribute to the anchor element!
+    href is required to add the blue text link color
+    Can use anchor tags to any kind of resource!
+        HTML documents, videos, pdfs, images, etc
+        Mostly used to link to other html docs
+
+Opening Elements in New Tab
+    Above method opens in the same tab as the webpage
+    Can change this with the target attribute
+        Open in new tab: target="_blank"
+    
+rel Attribute:
+    Used to describe the relation between the current page
+    and the linked document. 
+    Can take multiple values
+        noopener: Prevents new tab from accessing the original page
+        Modern browsers have this autoset for target="_blank" links,
+        but still good practice to manually set it
+        noreferrer: Same as noopener, also prevents certain details 
+        from being passed to the new page
+
+Absolute vs Relative links
+    Absolute: Links to pages on other websites
+        Made up of: scheme://domain/path
+        Will always contain the scheme and domain of the destination
+    Relative: Links to other pages within our own website!
+
+        Only include the file path to the other page, Relative
+        to the page you are creating the link ON!
+
+        IMPORTANT! Need to specify the directory the new page 
+        is on!
+    A helpful metaphor:
+        Think of domain name (town.com) as a town! The directory
+        the website is located in (/museum) as a museum,
+        and each page on the website as rooms in the museum
+        (/meuseum/movie_room.html). Relative links like
+        ./shops/coffee_shop.html are directions from the current 
+        room (/meuseum/movie_room.html) to another room (the coffe shop)
+        Absolute Links are full directions including the protocol,
+        the domain name, and the path from that domain name:
+        https://town.com/meuseum/shops/coffe_shop.html
+
+Images!!
+    HTML has <img> element. This is a void element!
+        Remember: No closing tag, naturally empty!
+        Embeds an image into the page using src attribute
+            src works much like href for anchor tags
+                both absolute and relative paths
+    <img src="./images/dog.jpg">
+
+    IMPORTANT!!!! Make sure images you use on your website
+    are either free to use or provide credit!
+
+        Include the creator's name and contact info in the 
+        README file in repository, or give attribution
+    To find the author: Google Images -> Image Results -> Tools
+    -> Usage Rights -> Creative Commons. Click license details
+    Always review the license requirements of any images you want to use
+
+Alt Attribute
+    Every image element should also have an alt attribute
+    Used to describe an image. Will be used in place of the img
+    if it can't be loaded. Also used with screen readers 
